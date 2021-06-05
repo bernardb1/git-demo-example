@@ -1,0 +1,57 @@
+// https://towardsdatascience.com/an-easy-beginners-guide-to-git-2d5a99682a4c
+// https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+
+git clone https://github.com/julia-git/Git-for-Beginners
+
+
+cd ~/Desktop/git-demo-example
+
+git init
+git add fruit.py veggies.py
+or
+git add .
+git status
+git commit -m "Commit Test #1"
+
+edit txt files...
+
+git add .
+git commit -m “Changed pumpkin from veggie to fruit”
+git log
+or 
+git log --pretty=oneline
+git commit -m “Changed pumpkin from veggie to fruit”
+
+touch .gitignore
+add filenames to ignore
+
+git commit -m "Ignore files"
+git status
+
+git branch test
+git checkout test
+add/edit files
+
+git diff test master
+
+Merge into master...
+git checkout master
+git merge test
+
+Create a Remote Repository to Share with Others...
+https://github.com/. ...New ... "git-demo-example"
+
+git remote add origin https://github.com/bernardb1/git-demo-example.git
+
+Push files to github repos...
+git push -u origin master
+...worked!
+
+Add Git.txt file...
+To local and then github repos
+
+git add Git.txt
+git commit -m "Add Git.txt"
+git push -u origin master
+
+
